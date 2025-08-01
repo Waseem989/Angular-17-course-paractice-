@@ -1,6 +1,92 @@
+header {
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-bottom: 2px solid #ddd;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      text-align: center;
+    }
+
+    header h2 {
+      margin: 0;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .button-group {
+      margin-top: 15px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown > button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1000;
+      border-radius: 5px;
+    }
+
+    .dropdown-content a {
+      padding: 10px 16px;
+      display: block;
+      color: #333;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Sub-dropdown */
+    .sub-dropdown {
+      position: relative;
+    }
+
+    .sub-dropdown-content {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      background-color: #fff;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1000;
+      border-radius: 5px;
+    }
+
+    .sub-dropdown:hover .sub-dropdown-content {
+      display: block;
+    }
+
+    .sub-dropdown a::after {
+      float: right;
+      font-size: 12px;
+    }
+
 div{
     color: blue;
-    font-size: 40px;
+    font-size: 20px;
 }
 hr{
     height: 5px;
