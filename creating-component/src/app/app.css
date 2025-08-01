@@ -1,0 +1,9 @@
+div{
+    color: blue;
+    font-size: 40px;
+}
+hr{
+    height: 5px;
+    border-color: chocolate;
+    background-color: chartreuse;
+}
